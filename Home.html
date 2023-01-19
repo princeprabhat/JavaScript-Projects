@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IP Address Tracker</title>
+	<link rel="stylesheet" type="text/css" href="design.css">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+	<!-- leaflet cdn -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<script src="https://kit.fontawesome.com/182156d733.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<div class="first-container">
+		<div class="heading">
+			<h3 class="header-1">IP Address Tracker</h3>
+		</div>
+
+
+		<div class="searchbox">
+			<input type="text" id="ip_address" class="search_box" placeholder="Search for any IP address or domain">
+			<button id="search_btn" class="btn-icon" style="width: 15%;" >
+				<i class="fas fa-chevron-right"></i>
+			</button>
+
+		</div>
+		
+
+
+	</div>
+	<div class="main-container">
+		<div class="container border-right" >
+			<h4>IP ADDRESS</h4>
+			<span id="current_ip"  class="">192.78.10.8</span></div>
+		<div class="container border-right" >
+			<h4>LOCATION</h4>
+			<span id="current_location" class="">Bokaro, Jharkhand 100498</span>
+			<span></span>
+		</div>
+		<div class="container border-right">
+			<h4>TIME ZONE</h4>
+			<span id="current_time" class="">UTC -8.01</span></div>
+		<div class="container">
+			<h4>ISP</h4>
+			<span id="current_isp">Spacex Starlink</span>
+		<!-- <span></span> -->
+		</div>
+	</div>
+	<div id="map">
+
+	</div>
+	<script src="global.js"></script>
+</body>
+
+</html>
